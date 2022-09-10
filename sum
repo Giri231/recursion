@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+void natural(int n)
+{
+    if(n<=50)
+    {
+    cout<<" "<<n<<"";
+    natural(n+1);
+    }
+}
+
+int main()
+{
+    int n=1;
+    natural(n);
+    return 0;
+}
