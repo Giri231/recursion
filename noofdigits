@@ -1,0 +1,25 @@
+include<iostream>
+
+using namespace std;
+int i=0;
+int count(int n)
+{
+    if(n!=0){
+   
+    i++;
+       count(n/10);
+    
+    }
+    return i;
+    
+    
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    cout<<count(n);
+    return 0;
+    
+}
