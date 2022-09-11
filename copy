@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+void cop(char a1[],char a2[],int i)
+{
+    a2[i]=a1[i];
+    if(a1[i]=='\0')
+    return;
+    cop(a1,a2,i+1);
+}
+
+int main()
+{
+    char a1[20],a2[20];
+    cin>>a1;
+    cop(a1,a2,0);
+    cout<<a1<<"\n";
+    cout<<a2;
+    
+}
