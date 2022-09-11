@@ -1,0 +1,50 @@
+#include<iostream>
+
+using namespace std;
+
+int j=0;
+
+int matrix(int a[][],int b[][])
+{
+    if(i<m)
+    {
+        if(j<k)
+        {
+            if(k<n)
+            
+        }
+    }
+}
+
+int main()
+{
+    int m,n;
+    cin>>m>>n;
+    int l,k;
+    cin>>l>>k;
+    int a[m][n];
+    int b[l][k];
+     if(n!=l)
+    {
+        cout<<"try again";
+    }
+    else
+    {
+    for(int i=0;i<m;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            cin>>a[i][j];
+        }
+    }
+    for(int i=0;i<l;i++)
+    {
+        for(int j=0;j<k;j++)
+        {
+            cin>>b[i][j];
+        }
+    }
+   
+    }
+    matrix(a,b);
+}
