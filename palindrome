@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+void palindrome(char a[],int i)
+{
+    int len=strlen(a)-(i+1);
+    
+    if(a[i]==a[len])
+    {
+        if (i+ 1 == len || i == len)
+        {
+            cout<<" The entered word is a palindrome.\n";
+            return;
+        }
+        palindrome(a, i+ 1);
+    }
+    else
+    {
+       cout<<" The entered word is not a palindrome.\n\n";
+    }
+    
+}
+int main()
+{
+   char a[25];
+   cin>>a;
+   palindrome(a,0);
+    
+}
